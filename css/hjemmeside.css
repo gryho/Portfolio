@@ -1,0 +1,173 @@
+
+body, html {
+
+
+  height: 100%;
+  margin: 0%;
+}
+/*Nedenunder er navigations baren stylet med farve osv. */
+ul {
+
+list-style-type: none;
+
+
+margin: 0;
+padding: 0;
+
+overflow: hidden;
+background-color: grey;
+
+
+}
+
+/*Nedenunder er ordene i nav baren sat til
+opførsel og med padding mellem ord*/
+ul li {
+float:left;
+padding: 5px 16px;
+  }
+
+/*nedenunder er selve teksten i nav baren sat
+til farve, ingen punktvisning, skrifttype, størrelse.
+Jeg forstår ikke display block og display inline */
+li a {
+
+
+display: block;
+color: white;
+text-align: center;
+
+text-decoration: none;
+
+
+font-family: arial,sans-serif;
+font-size: 20px;
+
+
+display:inline;
+
+padding:0;
+
+}
+
+/* forsideteks*/
+.container{
+
+position: relative;
+text-align: center;
+color: black;
+
+}
+
+.kontakt-centrered {
+position: absolute;
+  top: 30%;
+  left: 50%;
+
+}
+
+.om-mig-right{
+position: absolute;
+top: 50%;
+left: 10%;
+
+}
+
+
+/*
+nedenstående er til baggrundsfotoet som er forside fotoet */
+.background-image{
+     z-index: -9999;
+    /* The image used */
+    background-image: url("nytforsidefoto.jpg");
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*nedenunder er nav baren gjort aktiv med farve når man trykker på den*/
+.active{
+  background-color: black;
+
+}
+
+/* layout med flexbox det nedenunnder er en prøve */
+
+.flex-container {
+/*når der skrives "display:flex; " på en div, bliver den til
+en flex-container og dens børn opfører sig som flex-items */
+display: flex;
+flex-wrap;
+justify-content: space-between;
+
+
+}
+/*  her skriver du de div flex box elementer som du vil ha
+bagrunds farve på*/
+.header,footer{
+
+background-color: white;
+}
+
+/*når du skriver punktum og fx footer så refererer du til
+footer flex-containeren i html siden*/
+.footer{
+
+width 100%;
+margin-bottom: 20px;
+height: 20px;
+order: -1;
+
+}
+
+
+
+.multimediedesign{
+position: relative;
+}
+
+
+
+/* Kontaktsiden. Nedenstående er en kontaktformular med style ift. text, textområder.
+ */
+
+input[type=text], select, arial {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 4px; /* Runde hjørner */
+  box-sizing: border-box; /* Sikre at padding bliver på plads
+   */
+  margin-top: 6px; /*  top margin */
+  margin-bottom: 16px; /* Bottom margin */
+
+}
+
+/* Kontaktsiden. Style tilmeldings button with
+background color og border */
+input[type=send] {
+  background-color: #3399ff;
+  color: white;
+  padding: 5px 20px;
+/* Style på indersiden af send botton */
+
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+
+/*  Kontaktsiden. background color og padding
+omkring hele formularen */
+.container {
+  position: centered;
+  border-radius: 5px;
+  border: 10px
+  background-color: white;
+  padding: 20px;
+}
